@@ -9,6 +9,7 @@ output: html_notebook
 raw_mention <- read.csv('C:/Users/fks5029/Documents/GitHub/SoDA-501/EX02/googlebooks-filtered-1850-2008.csv',header=TRUE,sep=",")
 
 plot(raw_mention$year, raw_mention$term_count, type="l", col="grey", lwd=3, xlab="Year", ylab="Frequency", main="3A-with raw mention count")
+points(rm$year[term==1950],rm$term_count[term==1950], type="1") 
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
